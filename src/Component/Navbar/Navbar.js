@@ -3,21 +3,20 @@ import { NavLink } from "react-router-dom";
 // import SearchIcon from '@mui/icons-material/Search';
 import Logo from '../Image/logo.png'
 import Button from '@mui/material/Button';
-import { Select, MenuItem, FormControl, makeStyles } from '@material-ui/core';
 import LocalPhoneRoundedIcon from '@mui/icons-material/LocalPhoneRounded';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { Language } from "@material-ui/icons";
+import Select from 'react-select';
 
+const Languages = [
+    { label: "EN ", value: 0 },
+    { label: "AR ", value: 1 },
 
-const useStyles = makeStyles(theme => ({
-    FormControl: {
-        // minWidth: 200
-    }
-}));
+];
+
 
 const Navbar = () => {
-    const classes = useStyles();
-    const [value, setValue] = useState("");
-    const handleChange = e => setValue(e.target.value)
+
     return (
         <>
 
@@ -29,14 +28,7 @@ const Navbar = () => {
                     <div className="nav-link">
                         <ul className="uli">
                             <li className="nav-item">
-                                <FormControl className={classes.FormControl}>
-                                    <Select onChange={handleChange} SelectDisplayProps={{ style: { paddingTop: 8, paddingBottom: 8 } }}
-                                        variant="filled"
-                                        value={1}>
-                                        <MenuItem value={1} >EN</MenuItem>
-                                        <MenuItem value={2}>AR</MenuItem>
-                                    </Select>
-                                </FormControl>
+                            <Select options={Languages} defaultValue={[Languages[0]]} />
                             </li>
 
                             <li className="nav-item"><a className="re" href="javascript:;"><LocalPhoneRoundedIcon fontSize="small"/>CALL US + (000) 00000</a></li>

@@ -1,0 +1,177 @@
+.commuu {
+  height: fit-content;
+  /* margin-top: 32px; */
+  /* position: relative; */
+}
+.conm {
+  padding-top: 143px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 3vw;
+}
+.com-tit {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5vw;
+  line-height: 4vw;
+  background: linear-gradient(88.21deg, #375958 -25.83%, #172120 96.08%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contain {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  /* or 140% */
+
+  display: flex;
+  align-items: center;
+  text-align: justify;
+
+  color: #818181;
+}
+.graph {
+  background: linear-gradient(88.21deg, #375958 -25.83%, #172120 96.08%);
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+
+  padding: 1rem;
+  position: absolute;
+  top: 980px;
+  right: 48px;
+}
+.featuers {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  margin-top: 3vw;
+}
+.map-loc {
+  width: 90%;
+  background-image: url(/Component/Image/loc/loc1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75vh;
+  border-radius: 40px;
+}
+.location {
+  width: 80%;
+  margin: auto;
+  margin-top: 4vw;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.di-loc {
+  background: white;
+  width: 18%;
+  padding: 3vw;
+  position: absolute;
+  right: 113px;
+  border-radius: 20px;
+}
+.loc-tit {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2vw;
+  line-height: 3vw;
+}
+.loc-con {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #979797;
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+  text-align: justify;
+}
+.sup-tit {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3vw;
+  line-height: 2vw;
+  color: #979797;
+}
+.bo-big {
+  font-size: 1.2vw;
+  line-height: 2.7vw;
+  margin: 0 0.8vw;
+}
+.types {
+  width: 80%;
+  margin: auto;
+  margin-top: 5vw;
+  margin-bottom: 3vw;
+}
+.types-grid {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  grid-row-gap: 5vw;
+  margin: 4vw auto;
+}
+.type-box {
+  border-radius: 20px;
+  background-image: url(http://localhost:3000/static/media/1.b47c33a3c18579319b1b.png);
+  width: 47%;
+  height: 20vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.type {
+  backdrop-filter: blur(25px);
+  border-radius: 0 20px 0 20px;
+  position: absolute;
+  right: 0;
+  padding: 1.5vw 3vw;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7vw;
+  line-height: 2vw;
+  text-align: center;
+  background: linear-gradient(88.21deg, #375958 -25.83%, #172120 96.08%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.info {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(25px);
+  border-radius: 0 19px 0 19px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1vw;
+  line-height: 1.5vw;
+  color: #000000;
+  position: absolute;
+  bottom: 0;
+  padding: 1vw;
+}

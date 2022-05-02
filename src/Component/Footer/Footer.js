@@ -13,15 +13,15 @@ const Footer=()=>{
             <p className="mai">
                 INFORMAITION
             </p>
-            <a  LinkComponent={NavLink} to="/contact" >Contact Us</a>
-            <a  LinkComponent={NavLink} to="/contact" >About Us</a>
+            <NavLink to="/contact" className="selee">Contact Us</NavLink>
+            <NavLink to="/about" className="selee">About Us</NavLink>
         </div>
         <div className="inf">
             <p className="mai">
             &nbsp;&nbsp;&nbsp;
             </p>
-            <a  LinkComponent={NavLink} to="/contact" >Privacy Policy</a>
-            <a  LinkComponent={NavLink} to="/contact" >Terms of Service</a>
+            <NavLink to="/policy" className="selee">Privacy Policy</NavLink>
+            <NavLink to="/policy" className="selee">Terms of Service</NavLink>
         </div>
         <div className="inf">
             <p className="mai">

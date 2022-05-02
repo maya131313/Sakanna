@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { NavLink } from "react-router-dom";
 
 
 
@@ -50,12 +51,13 @@ export default class Responsive extends Component {
 
         <Slider {...settings} className="mt" >
         
-          <div>
-            <div className="box-sli">
+          <div><NavLink to="/community">
+            <div className="box-sli"  >
               <div className="name-res">
                 <span className="mn"> MELIA</span> <br />
                 Residence</div>
             </div>
+            </NavLink>
           </div>
           <div>
           <div className="box-sli">

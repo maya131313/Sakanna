@@ -58,34 +58,7 @@ button.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-s
   justify-content: space-evenly;
   align-items: center;
 }
-.sup-tit {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 19px;
-  line-height: 20px;
 
-  color: #979797;
-}
-.main-tit {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 41px;
-  line-height: 40px;
-  color: #000000;
-}
-.sup {
-  display: flex;
-  align-content: center;
-  justify-content: flex-start;
-  align-items: center;
-}
-.gr {
-  border-top: 8px;
-  width: 100px;
-  border-color: #979797;
-  margin-left: 9px;
-}
 .comun {
   width: 90%;
   margin: auto;
@@ -124,12 +97,21 @@ button.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-s
   position: absolute;
   flex-direction: column;
   padding: 14px 7px;
+  color: #040f00;
 }
+
 .mn {
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
-//   color: #523f3f00;
+
+
+  background: linear-gradient(88.21deg, #375958 -25.83%, #172120 96.08%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
 }
 .slick-prev:before, .slick-next:before  {
     content: '' !important;

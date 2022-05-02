@@ -1,7 +1,7 @@
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from './Slider'
+// import Slider from '../Slider/Slider'
 import Mslider from './Mslider'
 import { useTheme } from '@mui/material/styles';
 import OutlinedInput from '@mui/material/OutlinedInput';
@@ -10,6 +10,8 @@ import { MenuItem, FormControl, InputLabel, makeStyles } from '@material-ui/core
 import { useState } from "react";
 import Logo from '../Image/logo.png'
 import Select from 'react-select';
+import Slider from '../Slider/Slider'
+
 
 const Communities = [
     { label: "ALL COMMUNITIES", value: 0 },
@@ -75,7 +77,7 @@ const Home = () => {
                         </svg>
                         <div className="selecty">
                             <label className="l-b">COMMUNITY</label>
-                            <Select options={Communities} />
+                            <Select options={Communities} defaultValue={[typesOptions[0]]} />
 
                         </div>
                     </div>
