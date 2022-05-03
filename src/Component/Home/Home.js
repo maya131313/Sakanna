@@ -160,6 +160,9 @@ const Home = () => {
 
                 </div>
             </div>
+            <div className="plans">
+                
+            </div>
         </div>
     )
 

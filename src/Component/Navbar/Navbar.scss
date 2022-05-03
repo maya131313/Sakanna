@@ -3,9 +3,10 @@ body {
   box-sizing: border-box;
 }
 .nav {
-  height: 100px;
+  height: 80px;
   background: rgba(255, 255, 255, 0.41);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
+  -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   position: absolute;
   z-index: 1000;
@@ -13,7 +14,7 @@ body {
   width: 100%;
 }
 .logo {
-  width: 20%;
+  width: 18%;
 }
 .flex-nav {
   display: flex;
@@ -21,12 +22,12 @@ body {
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: row;
-
+  width:100%;
   padding: 0 2em;
 }
 .uli {
   display: flex;
-  gap: 4vw;
+  gap: 2vw;
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: row;
@@ -41,13 +42,14 @@ body {
 .css-1rwt2y5-MuiButtonBase-root-MuiButton-root{
 //   background-color: #1976d200 !important;
 //   border: 1px solid !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  font-size: 14px !important;
-//   box-shadow: none !important;
-  color: #000000 !important;
-  border-color: #000000 !important;
-  white-space:nowrap !important;
+font-style: normal !important;
+font-weight: 700 !important;
+font-size: 1vw!important;
+color: #000000 !important;
+border-color: #000000 !important;
+white-space: nowrap !important;
+line-height: 2vw!important;
+font-family: poppins!important;
 }
 // NavLink {
 //   text-decoration: none;
@@ -56,8 +58,10 @@ body {
 .re {
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 13px;
+
+  font-size: 1vw;
+  line-height: 2vw;
+
   display: flex;
     align-items: center;
     gap: 0.3vw;
