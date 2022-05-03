@@ -25,8 +25,11 @@ const Navbar = () => {
             <navbar className="nav">
                 <div className="flex-nav">
                     <img src={Logo} className="logo" alt="" />
-                    <div className="nav-link">
-                        <ul className="uli">
+                    <div>
+                    <input type="checkbox" id="toggler"/>
+                    <label for="toggler">LIST</label>
+                    <div className="nav-link menu">
+                        <ul className="uli list">
                             <li className="nav-item">
                             <Select options={Languages} defaultValue={[Languages[0]]} />
                             </li>
@@ -36,6 +39,7 @@ const Navbar = () => {
                             <li className="nav-item"><Button variant="outlined" LinkComponent={NavLink} to="/contact" >Contact Us</Button></li>
                         </ul>
                         
+                    </div>
                     </div>
                 </div>
             </navbar>

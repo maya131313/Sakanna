@@ -32,7 +32,9 @@ body {
   flex-wrap: nowrap;
   flex-direction: row;
   list-style-type: none;
+
 }
+
 .MuiInputLabel-formControl {
   top: 0;
   left: 0;
@@ -69,4 +71,38 @@ font-family: poppins!important;
   color: #000000;
   white-space: nowrap;
   text-decoration: none;
+}
+#toggler , .nav label{
+  display: none;
+}
+@media screen and (max-width:600px){
+.menu {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  // top: 95px;
+  top: 109px;
+  right: 43px;
+} 
+.list {
+  flex-direction: column;
+  align-items: center;
+  padding: 13px 16px;
+  background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0px 4px 8px rgb(0 0 0 / 4%);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+
+}
+.nav label{
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 32px;
+}
+#toggler:checked ~ .menu{
+  max-height: 100%;
+}
 }
