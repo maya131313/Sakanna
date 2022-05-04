@@ -6,7 +6,42 @@
     width: 57%;
   }
   .contact {
-    padding-top: 9vw;
+    padding-top: 18vh;
     width: 90%;
     margin: auto;
+}
+@media screen and (max-width:768px){
+
+  .flco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.w-57 {
+  width: 90%;
+}
+.locati {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4vw;
+}
+.contact {
+  padding-top: 19vh;
+  width: 90%;
+  margin: auto;
+}
+.svgcon {
+  width: 31%;
+  margin-bottom: 1.5vw;
+}
+.conat {
+  font-size: 1.9vw;
+}
+.title {
+  width: 90%;
+  margin: auto;
+}
 }

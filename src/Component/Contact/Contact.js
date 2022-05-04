@@ -17,8 +17,9 @@ const Contact=()=>{
 <div className="flco">
 <ContactForm/>
 <div className="locati">
-
-<svg width="107" height="107" viewBox="0 0 107 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+{/* <p className="conat">SAKANA REAL ESTATE DEVELOPMENT</p> */}
+<div className="rocon">
+<svg class="svgcon" viewBox="0 0 107 107" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_155_3262)">
 <circle cx="53.5" cy="49.5" r="49.5" fill="url(#paint0_linear_155_3262)"/>
 </g>
@@ -41,8 +42,10 @@ const Contact=()=>{
 </linearGradient>
 </defs>
 </svg>
-
-<svg width="107" height="107" viewBox="0 0 107 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+<p className="conat">Saudi Arabia - AL Khobar</p>
+</div>
+<div className="rocon">
+<svg class="svgcon" viewBox="0 0 107 107" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_156_3118)">
 <circle cx="53.5" cy="49.5" r="49.5" fill="url(#paint0_linear_156_3118)"/>
 </g>
@@ -64,9 +67,10 @@ const Contact=()=>{
 </linearGradient>
 </defs>
 </svg>
-
-
-<svg width="107" height="107" viewBox="0 0 107 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+<p className="conat">+966138813760</p>
+</div>
+<div className="rocon">
+<svg class="svgcon" viewBox="0 0 107 107" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_156_3124)">
 <circle cx="53.5" cy="49.5" r="49.5" fill="url(#paint0_linear_156_3124)"/>
 </g>
@@ -88,7 +92,8 @@ const Contact=()=>{
 </linearGradient>
 </defs>
 </svg>
-
+<p className="conat">+966138813760</p>
+</div>
 </div>
 </div>
 </div>

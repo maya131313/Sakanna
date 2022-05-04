@@ -19,7 +19,7 @@ body{
 .sup-tit {
     font-style: normal;
     font-weight: 500;
-    font-size: 2vw;
+    font-size: 1.2vw;
     line-height: 2vw;
   
     color: #979797;
@@ -28,8 +28,8 @@ body{
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    font-size: 3.2vw;
-    line-height: 4vw;
+    font-size: 2.9vw;
+    line-height: 2vw;
     color: #000000;
   }
   .sup {
@@ -50,6 +50,13 @@ body{
   font-size: 4.2vw;
   line-height: 6vw;
 }
+
+} 
+ @media screen and (max-width:768px) {
+.sup-tit{
+  font-size: 2.2vw;
+  line-height: 2vw;
+}
 }
   @media screen and (max-width:500px) {
     .main-tit {
@@ -64,6 +71,7 @@ body{
     color: #979797;
 }
 }
-.contact {
-  padding-top: 9vw;
+
+a:hover {
+  color: #2a4241!important;
 }

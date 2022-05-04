@@ -15,6 +15,7 @@ import'./Component/Footer/Footer.scss'
 import'./Component/Community/Community.scss'
 import'./Component/Slider/Slider.scss'
 import'./Component/Results/Results.scss'
+import'./Component/Contact/Contact.scss'
 import'./Component/ContactForm/ContactForm.scss'
 import'./index.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';

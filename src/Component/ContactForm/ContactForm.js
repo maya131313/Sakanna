@@ -88,20 +88,20 @@ class ContactForm extends React.Component {
       return (
   <>
   <div className="card shadow-sm border-0 px-3 rounded-2 mb-3 py-4 bg-light w-57">
-    <div className="card-header bg-transparent border-0 text-center text-uppercase"><h3>{this.props.title}</h3></div>
+    {/* <div className="card-header bg-transparent border-0 text-center text-uppercase"><h3>{this.props.title}</h3></div> */}
     <div className="card-body">
       <form action="/" onSubmit={(e) => this.handleSubmit(e)} encType="multipart/form-data" autoComplete="off">
         <div className="form-group">
-          <label className="mb-0">Your name<span className="text-danger">*</span></label>
-          <input name="name" type="text" className="form-control" placeholder="Name" value={this.state.name} onChange={this.handleChange} onBlur={this.handleBlur} />
+          <label className="mb-0 labcon">Your name<span className="text-danger gray">*</span></label>
+          <input name="name" type="text" className="form-control incon" placeholder="Name" value={this.state.name} onChange={this.handleChange} onBlur={this.handleBlur} />
           { nameError
             ? <div className="alert alert-danger mt-2">Name is a required field.</div>
             : ''
           }
         </div>
         <div className="form-group">
-          <label className="mb-0">Your email<span className="text-danger">*</span></label>
-          <input name="email" type="email" className="form-control" placeholder="Email" value={this.state.email} onChange={this.handleChange} onBlur={this.handleBlur} />
+          <label className="mb-0 labcon">Your email<span className="text-danger">*</span></label>
+          <input name="email" type="email" className="form-control incon" placeholder="Email" value={this.state.email} onChange={this.handleChange} onBlur={this.handleBlur} />
           { emailError
             ? <div className="alert alert-danger mt-2">Email is a required field.</div>
             : ''
@@ -112,18 +112,18 @@ class ContactForm extends React.Component {
           }
         </div>
         <div className="form-group">
-          <label className="mb-0">Your contact number (Optional)</label>
-          <input name="contact" type="text" className="form-control" placeholder="Contact" onChange={this.handleChange} value={this.state.contact}  />
+          <label className="mb-0 labcon">Your number <span className="smaller"> (Optional) </span></label>
+          <input name="contact" type="text" className="form-control incon" placeholder="number" onChange={this.handleChange} value={this.state.contact}  />
         </div>
         <div className="form-group">
-          <label className="mb-0">Message<span className="text-danger">*</span></label>
-          <textarea name="message" type="text" className="form-control" placeholder="Message" value={this.state.message} onChange={this.handleChange} onBlur={this.handleBlur} />
+          <label className="mb-0 labcon">Message<span className="text-danger">*</span></label>
+          <textarea name="message" type="text" className="form-control incon" placeholder="Message" value={this.state.message} onChange={this.handleChange} onBlur={this.handleBlur} />
           { messageError
             ? <div className="alert alert-danger mt-2">Message is a required field.</div>
             : ''
           }
         </div>
-          <p className="text-center mb-0"><input type="submit" className="btn btn-primary btn-lg w-100 text-uppercase" value="Submit Now" /></p>
+          <p className="text-center mb-0 labcon"><input type="submit" className="btn  btn-lg  text-uppercase ioi" value="Submit Now" /></p>
       </form>
       
     </div>
