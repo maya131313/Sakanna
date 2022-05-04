@@ -30,7 +30,7 @@ export default class Responsive extends Component {
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 768,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
@@ -38,10 +38,11 @@ export default class Responsive extends Component {
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 500,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
+     
           }
         }
       ]
@@ -94,7 +95,7 @@ function SampleNextArrow(props) {
       style={{ ...style, display: "block",color: "#523f3f00" ,position:"absolute", top:"-56", right:"50"  }}
       onClick={onClick}
     >
-<svg width="92" height="56" viewBox="0 0 92 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg className="svgs" viewBox="0 0 92 56" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M29.975 28H61.825" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M45.9 18.2L61.825 28L45.9 37.8" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -112,7 +113,7 @@ function SamplePrevArrow(props) {
       style={{ ...style, display: "block", color: "#523f3f00" }}
       onClick={onClick}
     >
-      <svg width="91" height="56" viewBox="0 0 91 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg className="svgs" viewBox="0 0 91 56" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M61.425 28H29.575" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M45.5 18.2L29.575 28L45.5 37.8" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

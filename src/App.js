@@ -8,16 +8,17 @@ import Error from './Component/Error/Error'
 import Navbar from './Component/Navbar/Navbar'
 import Footer from './Component/Footer/Footer'
 import Community from "./Component/Community/Community";
-// import Community from './Component/Community/Community'
+import Results from "./Component/Results/Results";
 import'./Component/Navbar/Navbar.scss'
 import'./Component/Home/Home.scss'
-// import'./Component/Home/SLider.scss'
 import'./Component/Footer/Footer.scss'
 import'./Component/Community/Community.scss'
 import'./Component/Slider/Slider.scss'
+import'./Component/Results/Results.scss'
+import'./Component/ContactForm/ContactForm.scss'
 import'./index.scss'
-import Select from 'react-select';
-import SearchContact from './Component/SearchContact/SearchContact'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 // import Slider from './Component/Home/Slider.js';
@@ -32,6 +33,7 @@ const App=()=>{
     <Route path='/contact' element={<Contact/>} />
     <Route path='/policy' element={<Policy/>} />
     <Route path='/community' element={<Community/>} />
+    <Route path='/results' element={<Results/>} />
     <Route element={<Error/>} />
     </Routes>
     <Footer/>

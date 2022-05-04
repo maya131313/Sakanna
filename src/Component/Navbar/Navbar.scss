@@ -14,7 +14,7 @@ body {
   width: 100%;
 }
 .logo {
-  width: 18%;
+  width: 15%;
 }
 .flex-nav {
   display: flex;
@@ -59,7 +59,7 @@ font-family: poppins!important;
 
 .re {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
 
   font-size: 1vw;
   line-height: 2vw;
@@ -75,34 +75,63 @@ font-family: poppins!important;
 #toggler , .nav label{
   display: none;
 }
-@media screen and (max-width:600px){
-.menu {
-  width: 100%;
-  max-height: 0;
-  overflow: hidden;
-  position: relative;
-  // top: 95px;
-  top: 109px;
-  right: 43px;
-} 
-.list {
-  flex-direction: column;
-  align-items: center;
-  padding: 13px 16px;
-  background: rgba(255, 255, 255, 0.85);
-    box-shadow: 0px 4px 8px rgb(0 0 0 / 4%);
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
 
+@media screen and (max-width:900px) {
+  .re{
+    font-size: 1.3vw;
+  }
+  .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
+    font-size: 1.3vw !important;
+    line-height: 3vw !important;
 }
-.nav label{
-  display: inline-flex;
-  align-items: center;
-  cursor: pointer;
-  position: absolute;
-  top: 32px;
 }
-#toggler:checked ~ .menu{
-  max-height: 100%;
+@media screen and (max-width:600px){
+  .menu {
+    width: 50vw;
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    top: 131px;
+    right: -31px;
+  } 
+  .nav {
+    height: 72px;
+  }
+  .list {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 4vw 2vw;
+    background: rgba(255, 255, 255, 0.85);
+      box-shadow: 0px 4px 8px rgb(0 0 0 / 4%);
+      -webkit-backdrop-filter: blur(15px);
+      backdrop-filter: blur(15px);
+  gap: 3vw;
+  }
+  .nav label{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 22px;
+    right: 39px;
+  }
+  #toggler:checked ~ .menu{
+    max-height: 100%;
+  }
+  .logo {
+    width: 40%;
+  }
+  .re {
+    font-size: 2.3vw;
+    line-height: 8vw;
+    font-weight: 600;
+  }
+  .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
+    font-size: 2.3vw !important;
+    line-height: 4vw !important;
 }
+  }
+  svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+    color: #8c7a6a;
+    font-size: 2rem;
 }
