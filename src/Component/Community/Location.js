@@ -1,6 +1,8 @@
 import React from "react";
 import Button from '@mui/material/Button';
 import { NavLink } from "react-router-dom";
+import Roll from 'react-reveal/Roll';
+import Slide from 'react-reveal/Slide';
 
 
 
@@ -8,8 +10,11 @@ const Location = () => {
 
     return (
         <>
+            <Slide left>
             <div className="map-loc"></div>
-            <div className="di-loc" data-aos="fade-up" data-aos-duration="3000">
+            </Slide>
+            <Roll right>
+            <div className="di-loc" >
                 <div className="title">
                     <div className="sup">
                         <p className="sup-tit">Location</p>
@@ -25,6 +30,7 @@ const Location = () => {
                     </center>
                 </div>
             </div>
+            </Roll>
         </>
     )
 }

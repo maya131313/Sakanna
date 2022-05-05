@@ -24,6 +24,9 @@ body {
   flex-direction: row;
   width:100%;
   padding: 0 2em;
+
+  max-height: 72px;
+
 }
 .uli {
   display: flex;
@@ -92,7 +95,7 @@ font-family: poppins!important;
     max-height: 0;
     overflow: hidden;
     position: relative;
-    top: 131px;
+    top: 160px;
     right: -31px;
   } 
   .nav {

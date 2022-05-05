@@ -14,7 +14,7 @@
   border: 1px solid #0000005e;
   border-radius: 12px;
 }
-button.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root {
+.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root {
   background: linear-gradient(88.21deg, #375958 -25.83%, #172120 96.08%);
   border-radius: 1vw;
   font-family: "Poppins";
@@ -57,7 +57,7 @@ button.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-s
   height: fit-content;
   position: relative;
   padding: 2vw;
-  bottom: 15vw;
+  bottom: 13vw;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
@@ -75,7 +75,7 @@ button.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-s
 .box-sli {
   height: 43vw;
   width: 27vw;
-  background-image: url(/Component/Image/sli2.png);
+  background-image: url(/Component/Image/melia/S1.jpg);
   background-size: cover;
   border-radius: 2.5vw;
   background-position: center;
@@ -206,7 +206,7 @@ button.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-s
 }
 .css-1s2u09g-control {
   font-size: 1.4vw !important;
-  line-height: 1vw !important;
+  line-height: 2vw !important;
 }
 .css-1rhbuit-multiValue {
   background-color: hsl(0deg 0% 90% / 39%) !important;
@@ -310,7 +310,7 @@ button.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-s
     height: fit-content;
     position: relative;
     padding: 4vw 2vw;
-    bottom: 14vw;
+    bottom: 18vw;
     margin: auto;
     // left: 20px;
     display: flex;
@@ -357,7 +357,7 @@ button.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-s
     justify-content: center;
     position: relative;
   }
-  .slick-slider {
+  #home.slick-slider {
     height: 77vh !important;
   }
 }

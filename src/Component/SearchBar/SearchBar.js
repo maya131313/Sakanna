@@ -1,6 +1,10 @@
 import React from "react";
 import Select from 'react-select';
 import Button from '@mui/material/Button';
+import Fade from 'react-reveal/Fade';
+import { NavLink } from "react-router-dom";
+
+
 
 
 const Communities = [
@@ -29,6 +33,7 @@ const priceOptions = [
 const SearchBar=()=>{
     return(
         <>
+        <Fade top>
         <div className="home-fun">
                 <div className="filterss">
                     <div className="sele">
@@ -78,12 +83,13 @@ const SearchBar=()=>{
                     </div>
 
                 </div>
-                <div className="">
-                    <Button variant="contained" >
+                <div className="" >
+                    <Button LinkComponent={NavLink} to="/results" variant="contained"  >
                         Search Properties
                     </Button>
                 </div>
         </div>
+        </Fade>
         </>
     )
 }

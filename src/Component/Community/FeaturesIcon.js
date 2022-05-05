@@ -1,4 +1,5 @@
 import react from 'react'
+import Zoom from 'react-reveal/Zoom';
 
 class FeaturesIcon extends react.Component {
     render() {
@@ -11,10 +12,12 @@ class FeaturesIcon extends react.Component {
         return (
             <>
                 <div className="featuers">
+                <Zoom top cascade>
                     {
                         FeaturesIcon.map((index) => <img src={index.src}
-                            title={index.title} alt="images" />)
+                            title={index.title} className="iop" alt="images" />)
                     }
+                    </Zoom>
                 </div>
             </>
 

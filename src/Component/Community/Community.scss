@@ -4,17 +4,17 @@
   /* position: relative; */
 }
 .conm {
-  padding-top: 143px;
+  padding-top: 14vh;
   width: 80%;
   margin: auto;
-  margin-bottom: 3vw;
+  margin-bottom: 2vw;
 }
 .com-tit {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 2.5vw;
-  line-height: 4vw;
+  font-size: 3.5vw;
+  line-height: 5vw;
   background: linear-gradient(88.21deg, #375958 -25.83%, #172120 96.08%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -25,8 +25,8 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 1.8vw;
+  line-height: 2.6vw;
   /* or 140% */
 
   display: flex;
@@ -39,31 +39,28 @@
   background: linear-gradient(88.21deg, #375958 -25.83%, #172120 96.08%);
   border: 3px solid #ffffff;
   box-sizing: border-box;
-  border-radius: 12px;
+  border-radius: 1vw;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 15px;
-  line-height: 20px;
-  /* identical to box height, or 133% */
-
+  font-size: 1.3vw;
+  line-height: 2vw;
   display: flex;
   align-items: center;
   text-align: center;
-
   color: #ffffff;
-
-  padding: 1rem;
+  padding: 1vw;
   position: absolute;
-  top: 980px;
-  right: 48px;
+  top: 135vh;
+  right: 5vw;
 }
 .featuers {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 88%;
   margin: auto;
   margin-top: 3vw;
+  margin-bottom: 3vw;
 }
 .map-loc {
   width: 90%;
@@ -84,11 +81,11 @@
 }
 .di-loc {
   background: white;
-  width: 18%;
+  width: 29%;
   padding: 3vw;
   position: absolute;
-  right: 113px;
-  border-radius: 20px;
+  right: 7vw;
+  border-radius: 2vw;
 }
 .loc-tit {
   font-family: "Poppins";
@@ -101,8 +98,9 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.4vw;
+  line-height: 2.2vw;
+
   color: #979797;
   margin-top: 1vw;
   margin-bottom: 2vw;
@@ -137,7 +135,7 @@
   margin: 4vw auto;
 }
 .type-box {
-  border-radius: 20px;
+  border-radius: 2vw;
   background-image: url(../Image/types/1.png);
   width: 47%;
   height: 20vw;
@@ -147,7 +145,7 @@
 }
 .type {
   backdrop-filter: blur(25px);
-  border-radius: 0 20px 0 20px;
+  border-radius: 0 2vw 0 2vw;
   position: absolute;
   right: 0;
   padding: 1.5vw 3vw;
@@ -164,7 +162,7 @@
 .info {
   background: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(25px);
-  border-radius: 0 19px 0 19px;
+  border-radius: 0 2vw 0 2vw;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -174,4 +172,117 @@
   position: absolute;
   bottom: 0;
   padding: 1vw;
+}
+.iop{
+  width: 10%;
+  height: fit-content;
+}
+.nui{
+  font-size: 2vw;
+    font-weight: 500;
+}
+@media screen and (max-width:768px) {
+  .types-grid {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    grid-row-gap: 5vw;
+    margin: 4vw auto;
+    align-items: center;
+}
+.type-box {
+  // border-radius: 2vw;
+  background-image: url(http://localhost:3000/static/media/1.b47c33a3c18579319b1b.png);
+  width: 92%;
+  height: 36vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.type {
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  border-radius: 0 2vw 0 2vw;
+  position: absolute;
+  right: 0;
+  padding: 2.5vw 5vw;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.7vw;
+  line-height: 2vw;
+  text-align: center;
+  background: linear-gradient(88.21deg, #375958 -25.83%, #172120 96.08%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.info {
+  background: rgb(255 255 255 / 27%);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  border-radius: 0 2vw 0 2vw;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2vw;
+  line-height: 3.2vw;
+  color: #000000;
+  position: absolute;
+  bottom: 0;
+  padding: 2vw;
+}
+  .com-tit{
+    font-size: 5.5vw;
+    line-height: 6vw;
+  }
+  .first,.second{
+    height: 50vh!important;
+    background-position: bottom;
+  }
+  .graph{
+    top: 73vh;
+  }
+  .featuers{
+    width: 82%;
+  }
+  .iop {
+    width: 15%;
+  }
+  .map-loc {
+    width: 90%;
+    background-image: url(http://localhost:3000/static/media/loc1.432d1001d42127cacc20.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 38vh;
+    border-radius: 40px;
+}
+}
+@media screen and (max-width:500px) {
+  .map-loc {
+    width: 103%;
+    background-image: url(http://localhost:3000/static/media/loc1.432d1001d42127cacc20.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 24vh;
+    border-radius: 40px;
+}
+.type-box {
+  background-image: url(http://localhost:3000/static/media/1.b47c33a3c18579319b1b.png);
+  width: 101%;
+  height: 41vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.featuers {
+  width: 92%;
+}
+.iop {
+  width: 17%;
+}
 }

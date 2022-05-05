@@ -10,11 +10,11 @@ import { MenuItem, FormControl, InputLabel, makeStyles } from '@material-ui/core
 import { useState } from "react";
 import Logo from '../Image/logo.png'
 import Select from 'react-select';
-import Slider from '../Slider/Slider'
+import SliderM from './SliderM'
 import FeaturesIcon from './FeaturesIcon'
 import Location from './Location'
 import SearchContact from '../SearchContact/SearchContact'
-
+import Fade from 'react-reveal/Fade';
 
 
 
@@ -23,25 +23,31 @@ const Community = () => {
     return (
         <>
             <div id="commuu">
+            <Fade top >
                 <div className="conm">
                     <div className="title">
                         <div className="sup">
                             <p className="sup-tit">FELL THE FRESHNESS</p>
                             <hr className="gr"></hr>
                         </div>
-                        <p className="com-tit">MELIA
-                            Residence</p>
+                        <p className="com-tit">MELIA&nbsp;
+                            <span className="nui">Residence</span></p>
                     </div>
                     <div className="contain">
+                   
                         The Building is designed so that 41units have a view on the sea. Terraces are oriented to the sea side. This Project is a mini community where you feel like you are among your family.
                         Life at MELIA RESIDENCE symbolizes a holy union between luxurious amenities and the
                         raw relieveness.
                         Each feature was carefully studied and implemented to help residents reach a high level of serenity and joy.
+                    
                     </div>
                 </div>
-                <Slider />
+                </Fade>
+                <Fade>
+                <SliderM />
+                </Fade>
                 <button className="graph">
-                    Download Brochour
+                Residence Plan
                 </button>
                 <div className="featuers">
                     <FeaturesIcon />
@@ -57,11 +63,12 @@ const Community = () => {
                             <p className="sup-tit">MELIA Residence</p>
                             <hr className="gr"></hr>
                         </div>
-                        <p className="com-tit">PROPERTIES
-                            Types</p>
+                        <p className="com-tit">PROPERTIES &nbsp;
+                        <span className="nui">Types</span></p>
                     </div>
 
                     <div className="types-grid">
+                    <Fade bottom big>
                         <div className="type-box">
                             <div className="type">Type A</div>
                             <div className="info">- Area : 180 m2 <br />
@@ -86,6 +93,7 @@ const Community = () => {
                                 - Total Count In Project : 1
                             </div>
                         </div>
+                        </Fade>
                     </div>
                 </div>
 

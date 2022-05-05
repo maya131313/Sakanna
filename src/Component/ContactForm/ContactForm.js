@@ -1,5 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Zoom from 'react-reveal/Zoom';
+
 
 class ContactForm extends React.Component {
   
@@ -87,7 +89,9 @@ class ContactForm extends React.Component {
         
       return (
   <>
+  <Zoom top>
   <div className="card shadow-sm border-0 px-3 rounded-2 mb-3 py-4 bg-light w-57">
+  
     {/* <div className="card-header bg-transparent border-0 text-center text-uppercase"><h3>{this.props.title}</h3></div> */}
     <div className="card-body">
       <form action="/" onSubmit={(e) => this.handleSubmit(e)} encType="multipart/form-data" autoComplete="off">
@@ -127,7 +131,8 @@ class ContactForm extends React.Component {
       </form>
       
     </div>
-  </div>
+    
+  </div></Zoom>
       </>
       );
         } else {
