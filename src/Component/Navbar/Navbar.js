@@ -37,7 +37,7 @@ const Navbar = () => {
 
                             <li className="nav-item"><a className="re" href="javascript:;"><LocalPhoneRoundedIcon fontSize="small"/>CALL US +966138813760</a></li>
                             <li className="nav-item"><a className="re" href="whatsapp://send?phone=053-000-9234"><WhatsAppIcon fontSize="small"/> SALES & SUPPORT</a></li>
-                            <li className="nav-item"><Button variant="outlined" LinkComponent={NavLink} to="/contact" >Contact Us</Button></li>
+                            <li className="nav-item"><Button variant="outlined" className="iopl" LinkComponent={NavLink} to="/contact" >Contact Us</Button></li>
                         </ul>
                         
                     </div>

@@ -22,7 +22,7 @@ export default class SimpleSlider extends Component {
         
         <Slider {...settings}>
           <div >
-            <div className="first t1"></div>
+            <div className="second t1"></div>
           </div>
           <div>
           <div className="second t2"></div>

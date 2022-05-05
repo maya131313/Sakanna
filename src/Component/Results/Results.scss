@@ -36,7 +36,7 @@
 }
 @media screen and (max-width:950px) {
     .result{
-        height: 31vh;
+        height: 39vh;
     }
     .result.home-fun{
         bottom: -13vh;
@@ -58,13 +58,14 @@
       }
       
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
     .result{
        
-    height: 40vh;
+    height: 48vh;
 
     }
-    .result.home-fun{
-        bottom: -10vh;
+    .result .home-fun{
+        bottom: -12vh;
     }
+
 }

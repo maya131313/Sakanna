@@ -9,7 +9,7 @@ import Navbar from './Component/Navbar/Navbar'
 import Footer from './Component/Footer/Footer'
 import Community from "./Component/Community/Community";
 import Results from "./Component/Results/Results";
-import'./Component/Navbar/Navbar.scss'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import'./Component/Home/Home.scss'
 import'./Component/Footer/Footer.scss'
 import'./Component/Community/Community.scss'
@@ -18,8 +18,10 @@ import'./Component/Slider/Slider.scss'
 import'./Component/Results/Results.scss'
 import'./Component/Contact/Contact.scss'
 import'./Component/ContactForm/ContactForm.scss'
+import'./Component/SearchContact/SearchContact.scss'
+import'./Component/SearchBar/SearchBar.scss'
 import'./index.scss'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import'./Component/Navbar/Navbar.scss'
 
 
 
