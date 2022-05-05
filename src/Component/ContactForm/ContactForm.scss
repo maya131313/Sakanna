@@ -46,3 +46,59 @@
   margin: auto;
 }
 }
+
+@media screen and (max-width:500px){
+
+
+.contact {
+  padding-top: 13vh;
+
+}
+.flco{
+  margin-top: 27px;
+}
+.labcon {
+  line-height: 29px;
+  font-size: 13px;
+  margin-top: 4px;
+  
+}
+.incon {
+  font-size: 15px;
+}
+.ioi {
+  background: linear-gradient(88.21deg, #375958 -25.83%, #172120 96.08%);
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 13px;
+  padding: 10px 15px;
+  margin-right: 0;
+  font-weight: 700;
+  white-space: nowrap;
+  border: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  margin-top: 12px;
+}
+.conat {
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+}
+.svgcon {
+  width: 41%;
+  margin-bottom: 1.5vw;
+}
+.locati{
+  align-items: flex-start;
+}
+.title {
+  width: 88%;
+  margin: auto;
+}
+.card-body {
+  flex: 1 1 auto;
+  padding: 3px;
+}
+}

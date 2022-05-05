@@ -9,14 +9,14 @@ const Footer=()=>{
         <footer className="foot">
         <div className="footer">
         <img src={Logo} className="down-foot"/>
-        <div className="inf">
+        <div className="inf oi">
             <p className="mai">
                 INFORMAITION
             </p>
             <NavLink to="/contact" className="selee">Contact Us</NavLink>
             <NavLink to="/about" className="selee">About Us</NavLink>
         </div>
-        <div className="inf">
+        <div className="inf oi">
             <p className="mai">
             &nbsp;&nbsp;&nbsp;
             </p>
@@ -123,7 +123,10 @@ const Footer=()=>{
 
             </div>
         </div>
+
+        
         </div>
+        
            <hr className="zei"/>
         <p className="rights">© 2022 Sakanna. All rights reserved</p>
         
