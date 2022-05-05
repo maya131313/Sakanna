@@ -3,6 +3,10 @@ import Select from 'react-select';
 import Button from '@mui/material/Button';
 import Fade from 'react-reveal/Fade';
 import { NavLink } from "react-router-dom";
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import {useTranslation} from "react-i18next";
+
+
 
 
 
@@ -31,9 +35,12 @@ const priceOptions = [
 
 
 const SearchBar=()=>{
+    const {t, i18n} = useTranslation('common');
+
     return(
         <>
-        <Fade top>
+        <Fade left>
+            
         <div className="home-fun">
                 <div className="filterss">
                     <div className="sele">
@@ -51,7 +58,7 @@ const SearchBar=()=>{
                             </defs>
                         </svg>
                         <div className="selecty">
-                            <label className="l-b">COMMUNITY</label>
+                            <label className="l-b">{t('SearchBar.Com')}</label>
                             <Select options={Communities} defaultValue={[typesOptions[0]]} />
 
                         </div>
@@ -89,6 +96,7 @@ const SearchBar=()=>{
                     </Button>
                 </div>
         </div>
+        
         </Fade>
         </>
     )

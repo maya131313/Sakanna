@@ -52,3 +52,9 @@
 .s8{
     background-image: url(/Component/Image/melia/S6.jpg);
 }
+@media screen and (max-width:768px) {
+    .second{
+        background-position: center;
+    }
+    
+}

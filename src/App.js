@@ -22,13 +22,21 @@ import'./Component/SearchContact/SearchContact.scss'
 import'./Component/SearchBar/SearchBar.scss'
 import'./index.scss'
 import'./Component/Navbar/Navbar.scss'
+import {useTranslation , initReactI18next} from "react-i18next";
+import i18next from "i18next";
 
 
 
 // import Slider from './Component/Home/Slider.js';
 
 const App=()=>{
+  const {t, i18n} = useTranslation('common');
+
+
+  // const { t } = this.props;
+  // document.documentElement.lang = i18next.language;
   return(
+    
     <>
     <Navbar/>
     <Routes>
