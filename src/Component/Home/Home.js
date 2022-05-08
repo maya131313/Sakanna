@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
 
 const Home = () => {
 
-    const {t, i18n} = useTranslation('common');
+    const {t, i18n} = useTranslation();
     const classes = useStyles();
     const [Community, setCommunity] = useState('');
     const [Type, setType] = useState('');
@@ -114,9 +114,8 @@ const Home = () => {
             <div className="plans">
                 
             <div>
-        <h1>{t('welcome.title', {framework:'React'})}</h1>
-        <button onClick={() => i18n.changeLanguage('de')}>de</button>
-        <button onClick={() => i18n.changeLanguage('en')}>en</button>
+        {/* <h1>{t('welcome.title', {framework:'React'})}</h1> */}
+        
     </div>
             </div>
         </div>

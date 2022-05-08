@@ -8,16 +8,16 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Language } from "@material-ui/icons";
 import Select from 'react-select';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import {useTranslation , initReactI18next} from "react-i18next";
+import i18n from "i18next";
+import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
 
-const Languages = [
-    { label: "EN ", value: 0 },
-    { label: "AR ", value: 1 },
-
-];
 
 
 const Navbar = () => {
-
+    const changeLanguage = lng => {
+        i18n.changeLanguage(lng);
+    }
     return (
         <>
 
@@ -31,12 +31,17 @@ const Navbar = () => {
                     <label for="toggler">  <MenuRoundedIcon /></label>
                     <div className="nav-link menu">
                         <ul className="uli list">
-                            <li className="nav-item">
-                            <Select options={Languages} defaultValue={[Languages[0]]} />
+                            <li className="nav-item"><LanguageOutlinedIcon fontSize="small" color="action"/>
+                            {i18n.language == 'en' &&
+        <button className="langi" onClick={() => i18n.changeLanguage('ar')}>العربية</button>
+        }
+        {i18n.language == 'ar' &&
+        <button className="langi" onClick={() => i18n.changeLanguage('en')}>en</button>
+    }
                             </li>
 
-                            <li className="nav-item"><a className="re" href="javascript:;"><LocalPhoneRoundedIcon fontSize="small"/>CALL US +966138813760</a></li>
-                            <li className="nav-item"><a className="re" href="whatsapp://send?phone=053-000-9234"><WhatsAppIcon fontSize="small"/> SALES & SUPPORT</a></li>
+                            <li className="nav-item"><a className="re" href="javascript:;"><LocalPhoneRoundedIcon fontSize="small" color="action"/>CALL US +966138813760</a></li>
+                            <li className="nav-item"><a className="re" href="whatsapp://send?phone=053-000-9234"><WhatsAppIcon fontSize="small" color="action"/> SALES & SUPPORT</a></li>
                             <li className="nav-item"><Button variant="outlined" className="iopl" LinkComponent={NavLink} to="/contact" >Contact Us</Button></li>
                         </ul>
                         

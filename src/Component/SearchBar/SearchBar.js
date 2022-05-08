@@ -91,7 +91,7 @@ const SearchBar=()=>{
 
                 </div>
                 <div className="" >
-                    <Button LinkComponent={NavLink} to="/results" variant="contained"  >
+                    <Button LinkComponent={NavLink} to="/results" variant="contained" className="kop" >
                         Search Properties
                     </Button>
                 </div>

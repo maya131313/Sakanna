@@ -10,15 +10,17 @@ import { MenuItem, FormControl, InputLabel, makeStyles } from '@material-ui/core
 import { useState } from "react";
 import Logo from '../Image/logo.png'
 import Select from 'react-select';
-import SliderM from './SliderM'
-import FeaturesIcon from './FeaturesIcon'
-import Location from './Location'
-import SearchContact from '../SearchContact/SearchContact'
+import SliderM from './SliderM';
+import FeaturesIcon from './FeaturesIcon';
+import Location from './Location';
+import SearchContact  from '../SearchContact/SearchContact';
+import  '../SearchContact/SearchContact.scss';
 import Fade from 'react-reveal/Fade';
-
-
+import CustomPopup from "../CustomPopup/CustomPopup";
 
 const Community = () => {
+    
+
 
     return (
         <>
@@ -98,7 +100,24 @@ const Community = () => {
                 </div>
 
             </div>
-            <SearchContact/>
+            
+            <div role="main" className="sc ki posi">
+            <div id="menuToggle">
+                    <input type="checkbox" />
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26 26L20.2 20.2M23.3333 12.6667C23.3333 18.5577 18.5577 23.3333 12.6667 23.3333C6.77563 23.3333 2 18.5577 2 12.6667C2 6.77563 6.77563 2 12.6667 2C18.5577 2 23.3333 6.77563 23.3333 12.6667Z" stroke="#8c7a6a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <div id="menu">
+                        <div className="res">
+                            <SearchContact className="res" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className=" sc ni posi">
+                <SearchContact />
+
+            </div>
         </>
     )
 

@@ -1,5 +1,6 @@
 {
   "name": "sakanna",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +17,9 @@
     "aos": "^2.3.4",
     "bootstrap": "^5.1.3",
     "i18next": "^21.6.16",
+    "i18next-browser-languagedetector": "^6.1.4",
     "node-sass": "^7.0.1",
+    "prop-types": "^15.8.1",
     "react": "^18.0.0",
     "react-bootstrap": "^2.3.1",
     "react-dom": "^18.0.0",
