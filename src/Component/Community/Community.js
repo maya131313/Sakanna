@@ -75,6 +75,17 @@ const Community = () => {
                             <div className="type">Type A</div>
                             <div className="info">- Area : 180 m2 <br />
                                 - Total Count In Project : 1
+                                <div className="typeinfo">
+                                    <hr className="type"/>
+                                    <ul className="ultype">
+                                        <li className="litype">Reception 7.15 x 4.00 m</li>
+                                        <li className="litype">Reception 7.15 x 4.00 m</li>
+                                        <li className="litype">Reception 7.15 x 4.00 m</li>
+                                        <li className="litype">Reception 7.15 x 4.00 m</li>
+                                        <li className="litype">Reception 7.15 x 4.00 m</li>
+                                        <li className="litype">Reception 7.15 x 4.00 m</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div className="type-box">

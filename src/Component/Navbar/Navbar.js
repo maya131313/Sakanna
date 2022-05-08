@@ -25,7 +25,8 @@ const Navbar = () => {
 
             <navbar className="nav">
                 <div className="flex-nav">
-                    <img src={Logo} className="logo" alt="" />
+                <NavLink to="/" >
+                    <img src={Logo} className="logo" alt="" /></NavLink>
                     <div>
                     <input type="checkbox" id="toggler"/>
                     <label for="toggler">  <MenuRoundedIcon /></label>

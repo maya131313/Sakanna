@@ -19,6 +19,7 @@
 .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm.MuiDialog-paperFullWidth.css-tlc64q-MuiPaper-root-MuiDialog-paper {
   background: #f8f9fa!important;
   border-radius: 2vw!important;
+  max-height: fit-content!important;
 }
 h2#alert-dialog-title {
   text-align: center;
@@ -28,4 +29,9 @@ h2#alert-dialog-title {
   color: #1b2726;
   font-weight: 700;
   text-transform: uppercase;
+}
+.MuiDialog-container.MuiDialog-scrollPaper.css-hz1bth-MuiDialog-container {
+  height: 100vh;
+  overflow-y: scroll;
+  padding-top: 17vw;
 }

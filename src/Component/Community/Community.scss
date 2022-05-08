@@ -437,3 +437,16 @@
     margin: 0px -8px;
 }
 }
+
+.type-box:hover .info {
+  height: 100%;
+  width: 88%;
+  transform: perspective(10px);
+  border-top-left-radius: 2vw;
+}
+ .typeinfo{
+  display:none;
+}
+.type-box:hover .typeinfo{
+  display:flex;
+}
