@@ -150,6 +150,42 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  transition: background 0.8s;
+  transition: all 0.8s;
+}
+.type-box:hover .info {
+  height: 80%;
+  width: 80%;
+  // transform: perspective(10px);
+  // border-top-left-radius: 2vw;
+  transition: height 0.8s ease;
+  transition: width 0.8s ease;
+
+}
+.type-box:hover .typeinfo{
+  transition: display 0.8s;
+  display:flex;
+  transition:all  1.8s ease;
+
+}
+.type-box:hover{
+  transform: scale(2);
+  box-shadow: 0 13px 40px -5px hsla(240, 30.1%, 28%, 0.12), 0 8px 32px -8px hsla(0, 0%, 0%, 0.14), 0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
+  transition: 0.8s ease;
+
+  background:url(../Image/types/1.png)  left center no-repeat;
+  background-size: 600px;
+}
+
+ .typeinfo{
+  transition: all 0.8s;
+  display:none;
+}
+.ultype {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  padding-left: 1vw;
 }
 .type {
   backdrop-filter: blur(25px);
@@ -180,6 +216,9 @@
   position: absolute;
   bottom: 0;
   padding: 1vw;
+  transition: all 0.8s;
+  transition: 0.8s ease;
+
 }
 .iop{
   width: 10%;
@@ -438,15 +477,3 @@
 }
 }
 
-.type-box:hover .info {
-  height: 100%;
-  width: 88%;
-  transform: perspective(10px);
-  border-top-left-radius: 2vw;
-}
- .typeinfo{
-  display:none;
-}
-.type-box:hover .typeinfo{
-  display:flex;
-}
