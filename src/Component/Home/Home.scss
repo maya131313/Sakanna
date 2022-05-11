@@ -75,7 +75,6 @@
 .box-sli {
   height: 43vw;
   width: 27vw;
-  background-image: url(/Component/Image/sli2.png);
   background-size: cover;
   border-radius: 2.5vw;
   background-position: center;
@@ -84,6 +83,18 @@
   align-items: flex-end;
   justify-content: center;
   position: relative;
+}
+.mel{
+  background-image: url(/Component/Image/sli2.png);
+}
+.car{
+  background-image: url(/Component/Image/carmen/S4.jpg);
+}
+.orc{
+  background-image: url(/Component/Image/orcid/S7.jpg);
+}
+.lana{
+  background-image: url(/Component/Image/lana/S4.jpg);
 }
 .name-res {
   background: rgb(255 255 255 / 46%);

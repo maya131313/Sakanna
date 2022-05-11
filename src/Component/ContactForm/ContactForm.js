@@ -39,13 +39,13 @@ class ContactForm extends React.Component {
 
       this.setState({ [name]: value  });
 
-      if (value.length <= 0 && (name == 'name')) {
+      if (value.length <= 0 && (name === 'name')) {
         this.setState({ nameError: true });
       } else {
         this.setState({ nameError: false });
       } 
 
-      if (value.length <= 0 && (name == 'email')) {
+      if (value.length <= 0 && (name === 'email')) {
         this.setState({ emailError: true });
         this.setState({ emailError2: false });
       } else {

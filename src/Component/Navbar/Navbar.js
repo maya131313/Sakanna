@@ -33,15 +33,15 @@ const Navbar = () => {
                     <div className="nav-link menu">
                         <ul className="uli list">
                             <li className="nav-item"><LanguageOutlinedIcon fontSize="small" color="action"/>
-                            {i18n.language == 'en' &&
+                            {i18n.language === 'en' &&
         <button className="langi" onClick={() => i18n.changeLanguage('ar')}>العربية</button>
         }
-        {i18n.language == 'ar' &&
+        {i18n.language === 'ar' &&
         <button className="langi" onClick={() => i18n.changeLanguage('en')}>en</button>
     }
                             </li>
 
-                            <li className="nav-item"><a className="re" href="javascript:;"><LocalPhoneRoundedIcon fontSize="small" color="action"/>CALL US +966138813760</a></li>
+                            <li className="nav-item"><a className="re" href="/"><LocalPhoneRoundedIcon fontSize="small" color="action"/>CALL US +966138813760</a></li>
                             <li className="nav-item"><a className="re" href="whatsapp://send?phone=053-000-9234"><WhatsAppIcon fontSize="small" color="action"/> SALES & SUPPORT</a></li>
                             <li className="nav-item"><Button variant="outlined" className="iopl" LinkComponent={NavLink} to="/contact" >Contact Us</Button></li>
                         </ul>

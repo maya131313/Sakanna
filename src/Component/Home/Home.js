@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useEffect }  from "react";
+// import useState from "react"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Mslider from './Mslider'
@@ -9,18 +9,9 @@ import Slider from '../Slider/Slider'
 import SearchBar from '../SearchBar/SearchBar';
 import Slide from 'react-reveal/Slide';
 import {useTranslation , initReactI18next} from "react-i18next";
-
-
-
-
-const useStyles = makeStyles(theme => ({
-    FormControl: {
-        // minWidth: 200
-    }
-}));
-
-
-
+import axios from "axios";
+import state from "react";
+import map from "react";
 
 
 
@@ -29,19 +20,24 @@ const useStyles = makeStyles(theme => ({
 
 const Home = () => {
 
+    
+
+
     const {t, i18n} = useTranslation();
-    const classes = useStyles();
-    const [Community, setCommunity] = useState('');
-    const [Type, setType] = useState('');
-    const [Price, setPrice] = useState('');
+    // const classes = useStyles();
+    // const [Community, setCommunity] = useState('');
+    // const [Type, setType] = useState('');
+    // const [Price, setPrice] = useState('');
     // const handleChange = (event) => { setPrice(event.target.value); };
-    const [value, setValue] = useState("");
-    const handleChange = e => setValue(e.target.value)
+    // const [value, setValue] = useState("");
+    // const handleChange = e => setValue(e.target.value)
 
     const changeLanguage = lng => {
         i18n.changeLanguage(lng);
     }
 
+
+    
     return (
         <div id="home">
             <Slider />
@@ -112,7 +108,8 @@ const Home = () => {
                 </Slide>
             </div>
             <div className="plans">
-                
+            {/* {this.state.Communities.map(Communities => <div>{Communities.name}</div>)} */}
+                {/* {state.Communities.map(Communities =>  <div key={Communities.id}>{Communities.data}</div>)} */}
             <div>
         {/* <h1>{t('welcome.title', {framework:'React'})}</h1> */}
         

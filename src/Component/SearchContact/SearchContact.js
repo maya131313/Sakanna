@@ -23,10 +23,10 @@ import AlertDialog from "../CustomPopup/CustomPopup"
 
 const Communities = [
     { label: "ALL COMMUNITIES", value: 0 },
-    { label: "Orced", value: 355 },
-    { label: "Lana", value: 54 },
-    { label: "Melia", value: 43 },
-    { label: "Carmen", value: 61 },
+    { label: "Orced", value: 3 },
+    { label: "Lana", value: 4 },
+    { label: "Melia", value: 1 },
+    { label: "Carmen", value: 2 },
 ];
 const typesOptions = [
     { label: "ANY ", value: 0 },
@@ -73,8 +73,8 @@ const SearchContact = () => {
                             </defs>
                         </svg>
                         <div className="selecty">
-                            <label className="l-b">{t('SearchBar.Com')}</label>
-                            <Select options={Communities} defaultValue={[Communities[43]]} />
+                            <label className="l-b">Communities</label>
+                            <Select options={Communities} defaultValue={Communities[1]} />
 
                         </div>
                     </div>

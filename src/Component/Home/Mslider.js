@@ -4,14 +4,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { NavLink } from "react-router-dom";
+import {useState , useEffect} from "react";
 import Slide from 'react-reveal/Slide';
+import Axios from 'axios'
 
 
 
 
 
-export default class Responsive extends Component {
-  render() {
+const Mslider = () => {
+  
     var settings = {
       arrows: true,
       infinite: true,
@@ -49,6 +51,23 @@ export default class Responsive extends Component {
         }
       ]
     };
+
+    // const [data, setData] = useState([]);
+
+  //   const arrslider = data.map((data, index) => {
+  //     return (
+        
+  //           <span className="mn"> {data.name}</span> 
+  //     )
+  // })
+  const [data, setData] = useState([]);
+  useEffect(() => {
+      Axios.get("http://api.mayaameenbasha.com/public/api/communities")
+      .then(res =>{
+           console.log("getting from ;;;" ,res.data)
+           setData(res.data)
+  }).catch(err => console.log(err))
+  }, []);
     return (
       <div>
 
@@ -57,7 +76,7 @@ export default class Responsive extends Component {
           <div>
             <NavLink to="/community">
           <Slide right >
-            <div className="box-sli"  >
+            <div className="box-sli mel"  >
               <div className="name-res">
                 <span className="mn"> MELIA</span> <br />
                 Residence</div>
@@ -68,9 +87,9 @@ export default class Responsive extends Component {
           <div>
             <NavLink to="/community">
           <Slide right >
-            <div className="box-sli"  >
+            <div className="box-sli car"  >
               <div className="name-res">
-                <span className="mn"> MELIA</span> <br />
+                <span className="mn"> CARMEN</span> <br />
                 Residence</div>
             </div>
             </Slide>
@@ -79,9 +98,9 @@ export default class Responsive extends Component {
           <div>
             <NavLink to="/community">
           <Slide right >
-            <div className="box-sli"  >
+            <div className="box-sli lana"  >
               <div className="name-res">
-                <span className="mn"> MELIA</span> <br />
+                <span className="mn"> LANA</span> <br />
                 Residence</div>
             </div>
             </Slide>
@@ -90,9 +109,9 @@ export default class Responsive extends Component {
           <div>
             <NavLink to="/community">
           <Slide right cascade>
-            <div className="box-sli"  >
+            <div className="box-sli orc"  >
               <div className="name-res">
-                <span className="mn"> MELIA</span> <br />
+                <span className="mn"> ORCHID</span> <br />
                 Residence</div>
             </div>
             </Slide>
@@ -103,7 +122,7 @@ export default class Responsive extends Component {
         </Slider>
       </div>
     );
-  }
+  
 }
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -138,3 +157,4 @@ function SamplePrevArrow(props) {
       </div>
   );
 }
+export default Mslider;

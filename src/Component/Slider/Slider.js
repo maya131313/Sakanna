@@ -26,7 +26,6 @@ export default class SimpleSlider extends Component {
           </div>
           <div>
           <div className="second t2"></div>
-
           </div>
 
         </Slider>

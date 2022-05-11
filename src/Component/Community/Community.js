@@ -71,39 +71,127 @@ const Community = () => {
 
                     <div className="types-grid">
                     <Fade bottom big>
-                        <div className="type-box">
+                        <div className="type-box ty1" id="shcc">             
+                                <input type="checkbox" className="erw"/>
                             <div className="type">Type A</div>
-                            <div className="info">- Area : 180 m2 <br />
-                                - Total Count In Project : 1
-                                <div className="typeinfo">
-                                    <hr className="type"/>
+                            <div className="info">Area : 180 m2 <br />
+                                Total Count In Project : 1
+                                <div className="typeinfo" id="menucc">
+                                    <hr className="typeh"/>
                                     <ul className="ultype">
                                         <li className="litype">Reception 7.15 x 4.00 m</li>
-                                        <li className="litype">Reception 7.15 x 4.00 m</li>
-                                        <li className="litype">Reception 7.15 x 4.00 m</li>
-                                        <li className="litype">Reception 7.15 x 4.00 m</li>
-                                        <li className="litype">Reception 7.15 x 4.00 m</li>
-                                        <li className="litype">Reception 7.15 x 4.00 m</li>
+                                        <li className="litype">Guest Toilet : 1.70 x 1.60 m</li>
+                                        <li className="litype">Bedroom1 5.00 x 3.80 m</li>
+                                        <li className="litype">Bedroom 2 5.00 x3.65 m</li>
+                                        <li className="litype">Master Bedroom 5.00 x 4.00 m</li>
+                                        <li className="litype">Dressing room 2.55 x 1.50 m</li>
+                                        <li className="litype">Master Room Toilet 3.20 x 2.00 m</li>
+                                        <li className="litype">Kitchen 4.20 x 2.20 m</li>
+                                        <li className="litype">Bathroom 2.20 x 1.90 m</li>
+                                        <li className="litype">Maid Room Toilet 2.25 x 1.90 m</li>
+                                        <li className="litype">Maid Room Toilet 2.25 x 1.40 m</li>
+                                        <li className="litype">Storage & Laundry 1.90 x 0.95 m</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div className="type-box">
-                            <div className="type">Type A</div>
-                            <div className="info">- Area : 180 m2 <br />
-                                - Total Count In Project : 1
+                        <div className="type-box trans ty2" id="shcc">              
+                               <input type="checkbox"  className="erw"/>
+                            <div className="type trans">Type B</div>
+                            <div className="info trans">Area : 161 m2 <br />
+                                Total Count In Project : 1
+                                <div className="typeinfo" id="menucc">
+                                    <hr className="typeh"/>
+                                    <ul className="ultype">
+                                        <li className="litype">Reception 6.20 x 4.00 m</li>
+                                        <li className="litype">Guest Toilet : 2.10 x 1.60 m</li>
+                                        <li className="litype">Bedroom1 4.00 x 3.60 m</li>
+                                        <li className="litype">Bedroom 2 3.80 x 3.60 m</li>
+                                        <li className="litype">Master Bedroom 4.30 x 4.10 m</li>
+                                        {/* <li className="litype">Dressing room 2.55 x 1.50 m</li> */}
+                                        <li className="litype">Master Room Toilet 2.70 x 1.70 m</li>
+                                        <li className="litype">Kitchen 3.40 x 3.00 m</li>
+                                        <li className="litype">Bathroom 3.00 x 1.60 m</li>
+                                        <li className="litype">Maid Room  3.50 x 1.60 m</li>
+                                        <li className="litype">Maid Room Toilet 1.82 x 1.20 m</li>
+                                        <li className="litype">Storage & Laundry 1.28 x 1.20 m</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div className="type-box">
-                            <div className="type">Type A</div>
-                            <div className="info">- Area : 180 m2 <br />
-                                - Total Count In Project : 1
+                        <div className="type-box trans ty3" id="shcc">                    
+                         <input type="checkbox"  className="erw"/>
+                            <div className="type trans">Type C</div>
+                            <div className="info trans">Area : 167 m2 <br />
+                                Total Count In Project : 24
+                                <div className="typeinfo" id="menucc">
+                                    <hr className="typeh"/>
+                                    <ul className="ultype">
+                                        <li className="litype">Reception 8.40 x 4.00 m</li>
+                                        <li className="litype">Guest Toilet : 1.70 x 1.60 m</li>
+                                        <li className="litype">Bedroom1 3.80 x 3.75 m</li>
+                                        <li className="litype">Bedroom 2 3.80 x 3.60 m</li>
+                                        <li className="litype">Master Bedroom 5.00 x 3.95 m</li>
+                                        <li className="litype">Dressing room 2.51 x 1.45 m</li>
+                                        <li className="litype">Master Room Toilet 3.00 x 2.00 m</li>
+                                        <li className="litype">Kitchen 3.00 x 2.20 m</li>
+                                        <li className="litype">Bathroom 2.20 x 1.90 m</li>
+                                        <li className="litype">Maid Room  2.05 x 1.90 m</li>
+                                        <li className="litype">Maid Room Toilet 2.05 x 1.40 m</li>
+                                        <li className="litype">Storage & Laundry 1.90 x 0.90 m</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div className="type-box">
-                            <div className="type">Type A</div>
-                            <div className="info">- Area : 180 m2 <br />
-                                - Total Count In Project : 1
+                        <div className="type-box trans ty4" id="shcc"> 
+                                           <input type="checkbox"  className="erw"/>
+                            <div className="type trans">Type D</div>
+                            <div className="info trans">Area : 160 m2 <br />
+                                Total Count In Project : 24
+                                <div className="typeinfo" id="menucc">
+                                    <hr className="typeh"/>
+                                    <ul className="ultype">
+                                        <li className="litype">Reception 5.00 x 4.00 m</li>
+                                        <li className="litype">Guest Toilet : 2.10 x 1.60 m</li>
+                                        <li className="litype">Bedroom1 3.60 x 3.60 m</li>
+                                        <li className="litype">Bedroom 2 4.00 x 3.60 m</li>
+                                        <li className="litype">Master Bedroom 4.30 x 3.90 m</li>
+                                        {/* <li className="litype">Dressing room 2.70 x 1.70 m</li> */}
+                                        <li className="litype">Master Room Toilet 2.70 x 1.70 m </li>
+                                        <li className="litype">Kitchen 3.40 x 3.00 m</li>
+                                        <li className="litype">Bathroom 3.00 x 1.60 m</li>
+                                        <li className="litype">Maid Room  3.50 x 1.60 m</li>
+                                        <li className="litype">Maid Room Toilet 1.82 x 1.20 m</li>
+                                        <li className="litype">Storage & Laundry 1.26 x 1.20 m</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="type-box trans ty5" id="shcc">
+                    <input type="checkbox"  className="erw"/>
+
+                            <div className="type trans">PENTHOUSE</div>
+                            <div className="info trans">Area : 168 m2 <br />
+                            Outdoor : 320 m2 <br/>
+                                Total Count In Project : 2
+                                         
+                                <div className="typeinfo"  id="menucc">
+                                    <hr className="typeh"/>
+                                    <ul className="ultype">
+                                        <li className="litype">Reception 8.40 x 3.85 m</li>
+                                        <li className="litype">Guest Toilet : 1.70 x 1.60 m</li>
+                                        <li className="litype">Bedroom1 3.80 x 3.75 m</li>
+                                        <li className="litype">Bedroom 2 3.80 x 3.75 m</li>
+                                        <li className="litype">Master Bedroom 5.00 x 4.00 m</li>
+                                        <li className="litype">Dressing room 2.55 x 1.50 m</li>
+                                        <li className="litype">Master Room Toilet 2.95 x 2.00 m </li>
+                                        <li className="litype">Kitchen 2.95 x 2.20 m</li>
+                                        <li className="litype">Bathroom 1.65 x 2.80 m</li>
+                                        <li className="litype">Maid Room  2.00 x 2.00 m</li>
+                                        <li className="litype">Maid Room Toilet 2.00 x 1.40 m</li>
+                                        <li className="litype">Storage & Laundry 2.00 x 0.95 m</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         </Fade>
