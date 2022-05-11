@@ -85,7 +85,7 @@ const Mslider = () => {
             </NavLink>
           </div>
           <div>
-            <NavLink to="/community">
+            <NavLink to="/">
           <Slide right >
             <div className="box-sli car"  >
               <div className="name-res">
@@ -96,7 +96,7 @@ const Mslider = () => {
             </NavLink>
           </div>
           <div>
-            <NavLink to="/community">
+            <NavLink to="/">
           <Slide right >
             <div className="box-sli lana"  >
               <div className="name-res">
@@ -107,7 +107,7 @@ const Mslider = () => {
             </NavLink>
           </div>
           <div>
-            <NavLink to="/community">
+            <NavLink to="/">
           <Slide right cascade>
             <div className="box-sli orc"  >
               <div className="name-res">

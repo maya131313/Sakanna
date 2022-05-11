@@ -17,6 +17,8 @@ import SearchContact  from '../SearchContact/SearchContact';
 import  '../SearchContact/SearchContact.scss';
 import Fade from 'react-reveal/Fade';
 import CustomPopup from "../CustomPopup/CustomPopup";
+import { NavLink } from "react-router-dom";
+
 
 const Community = () => {
     
@@ -71,9 +73,11 @@ const Community = () => {
 
                     <div className="types-grid">
                     <Fade bottom big>
+                    
                         <div className="type-box ty1" id="shcc">             
                                 <input type="checkbox" className="erw"/>
-                            <div className="type">Type A</div>
+                                <NavLink to="/type">
+                            <div className="type">Type A</div></NavLink>
                             <div className="info">Area : 180 m2 <br />
                                 Total Count In Project : 1
                                 <div className="typeinfo" id="menucc">
@@ -94,7 +98,9 @@ const Community = () => {
                                     </ul>
                                 </div>
                             </div>
+                            
                         </div>
+                        
                         <div className="type-box trans ty2" id="shcc">              
                                <input type="checkbox"  className="erw"/>
                             <div className="type trans">Type B</div>
