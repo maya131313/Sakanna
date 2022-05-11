@@ -8,11 +8,13 @@ import Error from './Component/Error/Error'
 import Navbar from './Component/Navbar/Navbar'
 import Footer from './Component/Footer/Footer'
 import Community from "./Component/Community/Community";
+import Type from "./Component/Community/Type/Type";
 import Results from "./Component/Results/Results";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import'./Component/Home/Home.scss'
 import'./Component/Footer/Footer.scss'
 import'./Component/Community/Community.scss'
+import'./Component/Community/Type/Type.scss'
 import'./Component/Community/SliderM.scss'
 import'./Component/Slider/Slider.scss'
 import'./Component/Results/Results.scss'
@@ -56,6 +58,7 @@ const App=()=>{
     <Route path='/contact' element={<Contact/>} />
     <Route path='/policy' element={<Policy/>} />
     <Route path='/community' element={<Community/>} />
+    <Route path='/type' element={<Type/>} />
     <Route path='/results' element={<Results/>} />
     <Route element={<Error/>} />
     </Routes>

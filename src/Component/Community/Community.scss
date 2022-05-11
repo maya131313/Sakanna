@@ -14,7 +14,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 3.5vw;
-  line-height: 3vw;
+  line-height: 4.3vw;
   background: linear-gradient(88.21deg, #375958 -25.83%, #172120 96.08%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -286,10 +286,10 @@ hr.typeh {
   -webkit-backdrop-filter: blur(25px);
   background: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(25px);
-  border-radius: 0 2vw 0 2vw;
+  border-radius: 0 0vw 2vw 2vw;
   position: absolute;
-  right: 0;
-  padding: 1.5vw 3vw;
+  right: 23px;
+  padding: 1.1vw 2.3vw;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -299,7 +299,7 @@ hr.typeh {
   /* background: linear-gradient(88.21deg, #375958 -25.83%, #172120 96.08%); */
   /* -webkit-background-clip: text; */
   /* -webkit-text-fill-color: transparent; */
-  background: rgb(255 255 255 / 33%);
+  background: rgba(255, 255, 255, 0.33);
   color: #172120;
 }
 .info {
@@ -371,19 +371,45 @@ hr.typeh {
   -webkit-text-fill-color: transparent;
 }
 .info {
-  background: rgb(255 255 255 / 27%);
+  background: rgba(255, 255, 255, 0.35);
   -webkit-backdrop-filter: blur(25px);
   backdrop-filter: blur(25px);
   border-radius: 0 2vw 0 2vw;
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 2vw;
-  line-height: 3.2vw;
+  line-height: 2.5vw;
   color: #000000;
   position: absolute;
   bottom: 0;
   padding: 2vw;
+  transition: all 0.8s;
+  left: 0;
+  bottom: 0;
+}
+#shcc input:checked ~ div .typeinfo {
+  display: flex;
+  flex-direction: column;
+  width: 57vw;
+  height: 19vw;
+}
+#shcc input:checked ~ div
+{
+ .info {
+  height: 77%;
+  width: 34vw;
+  max-width: -webkit-fill-available;
+}
+}
+.ultype {
+
+  height: 18vw;
+  position: relative;
+}
+li.litype {
+  font-size: 1.8vw;
+  font-weight: 300;
 }
   .com-tit{
     font-size: 5.5vw;
@@ -451,7 +477,7 @@ hr.typeh {
   color: #818181;
 }
 .graph {
-  top: 31%;
+  top: 29%;
   background: linear-gradient(88.21deg, #375958 -25.83%, #172120 96.08%);
   border: 3px solid #ffffff;
   box-sizing: border-box;
@@ -525,6 +551,49 @@ hr.typeh {
   font-size: 11px;
   line-height: 16px;
 }
+.info {
+  background: rgba(255, 255, 255, 0.35);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  border-radius: 0 2vw 0 2vw;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-weight: 700;
+  font-size: 2.5vw;
+  line-height: 3vw;
+  color: #000000;
+  position: absolute;
+  bottom: 0;
+  padding: 2vw;
+  transition: all 0.8s;
+  left: 0;
+  bottom: 0;
+}
+#shcc input:checked ~ div .typeinfo {
+  display: flex;
+  flex-direction: column;
+  width: 69vw;
+  height: 22vw;
+
+}
+#shcc input:checked ~ div
+{
+ .info {
+  height: 77%;
+  width: 34vw;
+  max-width: -webkit-fill-available;
+}
+}
+.ultype {
+
+  height: 18vw;
+  position: relative;
+}
+li.litype {
+  font-size: 2.1vw;
+  font-weight: 300;
+}
 }
 @media screen and (max-width:350px) {
   .graph {
@@ -551,7 +620,7 @@ hr.typeh {
   line-height: 35px;
 }
 .conm {
-  padding-top: 21vh;
+  padding-top: 12vh;
 }
 .loc-con{
   font-size: 9px;
