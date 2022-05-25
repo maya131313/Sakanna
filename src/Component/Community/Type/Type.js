@@ -23,94 +23,133 @@ import SliderM from "../SliderM";
 import SliderIn from "../SliderIn";
 import Location from "../Location";
 import SearchContact from "../../SearchContact/SearchContact";
+// import {l} from "../../Image/melia/1st-A.png"
+
+// var perf =require('./mapper.html')
+const rawHTML = `
 
 
+
+
+<map name="image-map">
+<area target="" alt="resption" title="Reception
+7.15 x 4.00 m" href="" coords="2990,2383,3914,728" shape="rect">
+<area target="" alt="bed2" title="Bedroom 2
+2 5.00 x3.65 m" href="" coords="2032,2692,2924,1520" shape="rect">
+<area target="" alt="bed1" title="Bedroom1 
+5.00 x 3.80 m<" href="" coords="1976,1515,1091,2690" shape="rect">
+<area target="" alt="mbed" title="Master Bedroom 
+5.00 x 4.00 m" href="" coords="107,2683,1021,1137,681,1142,716,1502,107,1506,100,1149,236,1257,300,1348,303,1278,401,1278,475,1373,328,1443,289,1404,261,1359,265,1306,251,1415,240,1313,422,1219,475,1303,552,1266,618,1179,657,1245,622,1305" shape="rect">
+<area target="" alt="g toi" title="Guest Toilet : 
+1.70 x 1.60 m " href="" coords="2913,723,2531,1070" shape="rect">
+<area target="" alt="ketchin" title="Kitchen 
+4.20 x 2.20 m" href="" coords="2472,100,1967,1070" shape="rect">
+<area target="" alt="m room" title="Maid Room
+2.25 x 1.90 m
+" href="" coords="1897,345,1473,846" shape="rect">
+<area target="" alt="s lun" title="Storage & Laundry 
+1.90 x 0.95 m" href="" coords="1908,890,1081,1131" shape="rect">
+<area target="" alt="m bath" title="Maid Room Toilet
+2.25 x 1.40 m" href="" coords="1424,348,1116,856" shape="rect">
+<area target="" alt="bath1" title="Bathroom 
+2.20 x 1.90 m" href="" coords="1053,567,608,1086" shape="rect">
+<area target="" alt="bath 2" title="bath 2" href="" coords="562,331,96,1077" shape="rect">
+</map>
+
+`;
 
 const Type = () => {
-    
+
 
 
     return (
         <>
             <div id="commuu">
-            <Fade top >
-                <div className="conm">
-                    <div className="title">
-                        <div className="sup">
-                            <p className="sup-tit">MELIA Residence</p>
-                            <hr className="gr"></hr>
-                        </div>
-                        <p className="com-tit">TYPE A&nbsp;
-                            {/* <span className="nui">Residence</span> */}
+                <Fade top >
+                    <div className="conm">
+                        <div className="title">
+                            <div className="sup">
+                                <p className="sup-tit">MELIA Residence</p>
+                                <hr className="gr"></hr>
+                            </div>
+                            <p className="com-tit">TYPE A&nbsp;
+                                {/* <span className="nui">Residence</span> */}
                             </p>
+                        </div>
                     </div>
-                    </div>
-                    </Fade>
-                    <div className="type-main">
+                </Fade>
+                <div className="type-main">
                     <Fade left >
-                    <div className="info-tec">
-                    <div className="tre">Area : 180 m&#178; <br />
-                                Total Count In Project : 1</div> 
-                    <table>
+                        <div className="info-tec">
+                            <div className="tre">Area : 180 m&#178; <br />
+                                Total Count In Project : 1</div>
+                            <table>
 
-  <tr>
-  <th>Reception </th>
-    <td>7.15 x 4.00 m</td>
-  </tr>
-  <tr>
-  <th>Guest Toilet : </th>
-    <td>1.70 x 1.60 m </td>
-  </tr>
-  <tr>
-  <th>Bedroom1  </th>
-    <td>5.00 x 3.80 m</td>
-  </tr>
-  <tr>
-  <th>Bedroom 2   </th>
-    <td>2 5.00 x3.65 m</td>
-  </tr>
-  <tr>
-  <th>Master Bedroom   </th>
-    <td>5.00 x 4.00 m</td>
-  </tr>
-  <tr>
-  <th>Dressing room  </th>
-    <td>2.55 x 1.50 m </td>
-  </tr>
-  <tr>
-  <th>Master Room Toilet  </th>
-    <td>3.20 x 2.00 m</td>
-  </tr>
-  <tr>
-  <th>Kitchen  </th>
-    <td>4.20 x 2.20 m</td>
-  </tr>
-  <tr>
-  <th>Bathroom  </th>
-    <td>2.20 x 1.90 m</td>
-  </tr>
-  <tr>
-  <th>Maid Room   </th>
-    <td>2.25 x 1.90 m</td>
-  </tr>
-  <tr>
-  <th>Maid Room Toilet  </th>
-    <td>2.25 x 1.40 m</td>
-  </tr>
-  <tr>
-  <th>Storage & Laundry </th>
-    <td>1.90 x 0.95 m</td>
-  </tr>
-</table>
-                    </div> 
+                                <tr>
+                                    <th>Reception </th>
+                                    <td>7.15 x 4.00 m</td>
+                                </tr>
+                                <tr>
+                                    <th>Guest Toilet : </th>
+                                    <td>1.70 x 1.60 m </td>
+                                </tr>
+                                <tr>
+                                    <th>Bedroom1  </th>
+                                    <td>5.00 x 3.80 m</td>
+                                </tr>
+                                <tr>
+                                    <th>Bedroom 2   </th>
+                                    <td>2 5.00 x3.65 m</td>
+                                </tr>
+                                <tr>
+                                    <th>Master Bedroom   </th>
+                                    <td>5.00 x 4.00 m</td>
+                                </tr>
+                                <tr>
+                                    <th>Dressing room  </th>
+                                    <td>2.55 x 1.50 m </td>
+                                </tr>
+                                <tr>
+                                    <th>Master Room Toilet  </th>
+                                    <td>3.20 x 2.00 m</td>
+                                </tr>
+                                <tr>
+                                    <th>Kitchen  </th>
+                                    <td>4.20 x 2.20 m</td>
+                                </tr>
+                                <tr>
+                                    <th>Bathroom  </th>
+                                    <td>2.20 x 1.90 m</td>
+                                </tr>
+                                <tr>
+                                    <th>Maid Room   </th>
+                                    <td>2.25 x 1.90 m</td>
+                                </tr>
+                                <tr>
+                                    <th>Maid Room Toilet  </th>
+                                    <td>2.25 x 1.40 m</td>
+                                </tr>
+                                <tr>
+                                    <th>Storage & Laundry </th>
+                                    <td>1.90 x 0.95 m</td>
+                                </tr>
+                            </table>
+                        </div>
                     </Fade>
                     <Fade right >
-                    <img className="ty-bac" src={bc} alt="9"/>
+                        <img className="ty-bac" src={bc} alt="9" />
+
+                        
+
+
                     </Fade>
-                    </div>
-                    
-                
-                
+                </div>
+
+
+                {/* <div className="container"> */}
+
+{/* <iframe src={perf }></iframe>  */}
+ </div>
                 {/* <Fade>
                 <SliderM />
                 </Fade> */}
@@ -121,9 +160,11 @@ const Type = () => {
                     <FeaturesIcon />
                 </div> */}
                 <div className="gra">
-                <div className="gra-floor">
-                    
-                </div>
+                    <div className="gra-floor">
+                    {/* <img src="" usemap="#image-map"/>
+                        <div dangerouslySetInnerHTML={{ __html: rawHTML }}></div> */}
+
+                    </div>
                 </div>
                 <div className="types">
                     <div className="title">
@@ -132,16 +173,16 @@ const Type = () => {
                             <hr className="gr"></hr>
                         </div>
                         <p className="com-tit">Interior
-                        <span className="nui">&nbsp;Design</span></p>
+                            <span className="nui">&nbsp;Design</span></p>
                     </div>
 
-                    
+
                 </div>
-<div>
-<SliderIn/>
-</div>
-            </div>
+                <div>
+                    <SliderIn />
+                </div>
             
+
             {/* <div role="main" className="sc ki posi">
             <div id="menuToggle">
                     <input type="checkbox" />
